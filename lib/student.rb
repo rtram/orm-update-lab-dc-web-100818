@@ -74,7 +74,7 @@ class Student
         WHERE name = ?
     SQL
     
-    record = DB[:conn].execute(sql, name)
+    record = DB[:conn].execute(sql, name)[0]
     binding.pry
   end 
 
